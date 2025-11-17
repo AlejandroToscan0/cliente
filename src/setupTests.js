@@ -6,5 +6,5 @@ import '@testing-library/jest-dom';
 
 // Polyfill para scrollIntoView en el entorno de testing
 if (typeof window !== 'undefined' && window.HTMLElement && !window.HTMLElement.prototype.scrollIntoView) {
-	window.HTMLElement.prototype.scrollIntoView = function() {};
+    window.HTMLElement.prototype.scrollIntoView = function () { };
 }
